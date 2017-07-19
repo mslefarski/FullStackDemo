@@ -1,8 +1,8 @@
 package main.java;
+
 import java.io.Reader;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import main.java.model.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.*;
@@ -25,9 +25,9 @@ public class FullStackDemoStarter {
 
 
         //Create user
-        User user = new User("user_login3", "user_email@gmail.com", "lol");
+        User user = new User("qwerty234", "user_email@gmail.com", "lol");
 
-        //Insert data
+        //Insert data	
         session.insert("User.insert", user);
         System.out.println("User inserted successfully.");
 
@@ -35,6 +35,8 @@ public class FullStackDemoStarter {
         //commit, close
         session.commit();
         session.close();
+        
+        System.exit(0);
 
     }
 
