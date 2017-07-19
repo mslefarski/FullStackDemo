@@ -42,7 +42,7 @@
 
 
 		<filters>
-			<filter>src/main/resources/properties/${properties.folder}/props.properties</filter>
+			<filter>src/main/resources/properties/profiles/${properties.folder}/props.properties</filter>
 		</filters>
 
 		<!-- dodajemy folder resources do skanowania -->

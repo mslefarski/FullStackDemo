@@ -36,6 +36,7 @@ public class FullStackDemoStarter {
         session.commit();
         session.close();
         
+        
         System.exit(0);
 
     }
